@@ -1,10 +1,11 @@
+#   Deploy and install instructions
 Clone repo
 ```
 git clone https://github.com/ranet101/fe-test.git
 ```
 Install laravel dependencies
 ```
-cd src
+cd fe-test/src
 sudo composer install
 ```
 Update app permissions
@@ -14,6 +15,5 @@ sudo chmod -R 777 src
 ```
 Launch docker
 ```
-cd fe-test
 sudo docker-compose up -d
 ```
