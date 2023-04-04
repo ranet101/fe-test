@@ -17,3 +17,6 @@ Launch docker
 ```
 sudo docker-compose up -d
 ```
+## Examples
+Full call: http://localhost/preguntas/javascript/2023-01-02/2023-03-31  
+Minimum call: http://localhost/preguntas/javascript

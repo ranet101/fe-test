@@ -15,7 +15,7 @@ use App\Http\Controllers\StackExchangeApi as StackExchangeApi;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('instrucciones');
 });
 
 
