@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StackExchangeApi as StackExchangeApi;
+use App\Http\Controllers\Main as Main;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/preguntas/{tagged?}/{fromdate?}/{todate?}',[StackExchangeApi::class, 'index']);
+Route::get('/preguntas/{tagged?}/{fromdate?}/{todate?}',[Main::class, 'index']);
