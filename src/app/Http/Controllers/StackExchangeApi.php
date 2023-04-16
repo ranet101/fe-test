@@ -3,10 +3,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as Controller;
 use Illuminate\Support\Facades\Http;
+use App\Traits\Utilities;
 
 class StackExchangeApi extends Controller
 {
-
+    use Utilities;
     /**
      * Route anchor method. 
      * - Verifies tagged param is not empty 
@@ -71,18 +72,6 @@ class StackExchangeApi extends Controller
         if($todate)
             $params["todate"]=$todate;
         return $params;
-    }
-
-    /**
-     * Model and returns error message
-     *
-     * @param String $msg   Required. Message to show.
-     * 
-     * @return Json
-     */ 
-    private function returnError($msg)
-    {
-        return json_encode(["error"=>$msg]);
     }
 
     /**
